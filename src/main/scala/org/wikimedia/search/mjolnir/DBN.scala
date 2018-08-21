@@ -23,17 +23,7 @@ import org.json4s.{JArray, JBool, JString}
 import org.json4s.jackson.JsonMethods
 
 class SessionItem(val queryId: Int, val urlIds: Array[Int], val clicks: Array[Boolean])
-//{
-//  override def toString(): String ={
-//    queryId.toString+"|"+urlIds.mkString(",")+"|"+clicks.mkString(",")
-//  }
-//}
 class RelevanceResult(val query: String, val region: String, val url: String, val relevance: Double)
-//{
-//  override def toString(): String ={
-//    query.toString+"|"+region.toString+"|"+url.toString+"|"+relevance.toString
-//  }
-//}
 
 class InputReader(minDocsPerQuery: Int, maxDocsPerQuery: Int, discardNoClicks: Boolean) {
 
